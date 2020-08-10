@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastViewController" customModule="Weather" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ForecastView" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8lW-cf-vBv">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWB-js-Inz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVc-c9-IEo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="tbk-zn-hEO"/>
+                    </constraints>
+                    <color key="barTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <navigationItem title="Title" id="XGh-Jf-eqr"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8lW-cf-vBv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2TJ-7w-5SL"/>
+                <constraint firstItem="SWB-js-Inz" firstAttribute="bottom" secondItem="mVc-c9-IEo" secondAttribute="bottom" id="6bi-RS-Wdc"/>
+                <constraint firstAttribute="trailing" secondItem="SWB-js-Inz" secondAttribute="trailing" id="9td-m4-px0"/>
+                <constraint firstItem="8lW-cf-vBv" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="E2y-PI-aaH"/>
+                <constraint firstItem="8lW-cf-vBv" firstAttribute="top" secondItem="SWB-js-Inz" secondAttribute="bottom" id="Ld8-oU-i5h"/>
+                <constraint firstItem="8lW-cf-vBv" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="WLJ-xf-5hU"/>
+                <constraint firstItem="mVc-c9-IEo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ah0-0b-blQ"/>
+                <constraint firstItem="SWB-js-Inz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gHn-Nn-Pdn"/>
+                <constraint firstItem="mVc-c9-IEo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gvI-Zg-EKO"/>
+                <constraint firstItem="mVc-c9-IEo" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="n2C-Gh-r8y"/>
+                <constraint firstItem="SWB-js-Inz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yR5-0F-vvX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="navigationBar" destination="mVc-c9-IEo" id="32C-Xt-rP5"/>
+                <outlet property="tableView" destination="8lW-cf-vBv" id="n7P-pN-m4v"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>

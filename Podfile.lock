@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (5.0.0-rc.2)
+  - Nimble (8.0.4)
+  - PromiseKit (6.11.0):
+    - PromiseKit/CorePromise (= 6.11.0)
+    - PromiseKit/Foundation (= 6.11.0)
+    - PromiseKit/UIKit (= 6.11.0)
+  - PromiseKit/CoreLocation (6.11.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.11.0)
+  - PromiseKit/Foundation (6.11.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.11.0):
+    - PromiseKit/CorePromise
+  - Quick (2.2.0)
+  - SwiftLint (0.35.0)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Alamofire (= 5.0.0-rc.2)
+  - Nimble (= 8.0.4)
+  - PromiseKit (= 6.11)
+  - PromiseKit/CoreLocation (= 6.11)
+  - Quick (= 2.2)
+  - SwiftLint (= 0.35)
+  - Swinject (= 2.7.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Nimble
+    - PromiseKit
+    - Quick
+    - SwiftLint
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: 16daaa5bbc5af2945b094b0325109b090dcf91ef
+
+COCOAPODS: 1.9.3

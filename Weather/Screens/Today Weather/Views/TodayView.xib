@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodayViewController" customModule="Weather" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="TodayView" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="HNQ-3A-Zz8">
+                    <rect key="frame" x="157" y="138" width="100" height="100"/>
+                    <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="6kD-9d-8L4">
+                            <variation key="heightClass=compact-widthClass=compact" constant="75"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="100" id="AzB-qC-UU9">
+                            <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                        </constraint>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fNn-Za-mca">
+                    <rect key="frame" x="119.5" y="246" width="175" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuw-pO-Z0n">
+                            <rect key="frame" x="0.0" y="0.0" width="175" height="20"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22°C  |  Sunny" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDo-Be-8RB">
+                    <rect key="frame" x="91" y="353" width="232" height="34"/>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="5Cb-BX-Qoj">
+                    <rect key="frame" x="137" y="412" width="140" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="R7l-IK-7wr"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="obo-aU-hgy" userLabel="Humidity Stack View">
+                    <rect key="frame" x="67" y="433" width="30" height="50.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="sa3-hg-5ie">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="FwG-BI-dlX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="57%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TU-D9-Gzk">
+                            <rect key="frame" x="1" y="33" width="28.5" height="17.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="M9l-UE-msc" userLabel="Precipitation Stack View">
+                    <rect key="frame" x="181.5" y="433" width="51" height="50.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="precipitation" translatesAutoresizingMaskIntoConstraints="NO" id="drK-s0-Osx">
+                            <rect key="frame" x="10.5" y="0.0" width="30" height="30"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Oua-xe-yN3"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0 mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J4-H6-Nao">
+                            <rect key="frame" x="0.0" y="33" width="51" height="17.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="65k-Gx-SCB" userLabel="Pressure Stack View">
+                    <rect key="frame" x="287" y="433" width="60" height="50.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pressure" translatesAutoresizingMaskIntoConstraints="NO" id="lqm-KV-zyp">
+                            <rect key="frame" x="15" y="0.0" width="30" height="30"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="tTs-QM-iET"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1019 hPa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gb-Wn-UOv">
+                            <rect key="frame" x="0.0" y="33" width="60" height="17.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-bs-n2o" userLabel="Wind Stack View">
+                    <rect key="frame" x="67" y="501.5" width="280" height="50.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="pbu-vD-ndk">
+                            <rect key="frame" x="0.0" y="0.0" width="140" height="50.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="BYt-ID-RIO">
+                                    <rect key="frame" x="55" y="0.0" width="30" height="30"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="BWM-Oq-7Zh"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 km/h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oA-jv-I5i">
+                                    <rect key="frame" x="40.5" y="33" width="59" height="17.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cbA-VI-cjz" userLabel="Wind Direction Stack View">
+                            <rect key="frame" x="140" y="0.0" width="140" height="50.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind-direction" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-xf-uJv">
+                                    <rect key="frame" x="55" y="0.0" width="30" height="30"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="NMe-9A-RfI"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1m-W6-dsu">
+                                    <rect key="frame" x="61" y="33" width="18.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="Hp2-85-5gU"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBG-Y5-iEU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lka-Ma-ZBo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="SV3-1w-rIL"/>
+                    </constraints>
+                    <color key="barTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <navigationItem title="Today" id="Y2a-Ut-oiJ"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176469999999" green="0.52156862749999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lka-Ma-ZBo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BeT-ey-0Co"/>
+                <constraint firstItem="5Cb-BX-Qoj" firstAttribute="top" secondItem="aDo-Be-8RB" secondAttribute="bottom" constant="25" id="C46-Ux-9fo">
+                    <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="65k-Gx-SCB" firstAttribute="trailing" secondItem="cbA-VI-cjz" secondAttribute="trailing" id="D1C-Rd-XuA"/>
+                <constraint firstItem="fNn-Za-mca" firstAttribute="centerX" secondItem="aDo-Be-8RB" secondAttribute="centerX" id="G8c-zf-9eH"/>
+                <constraint firstItem="aDo-Be-8RB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="91" id="KA7-C1-SkY"/>
+                <constraint firstItem="hBG-Y5-iEU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="N2y-EV-fAE"/>
+                <constraint firstAttribute="trailing" secondItem="hBG-Y5-iEU" secondAttribute="trailing" id="O6A-eI-bMI"/>
+                <constraint firstItem="obo-aU-hgy" firstAttribute="top" secondItem="M9l-UE-msc" secondAttribute="top" id="TMd-UX-EAo"/>
+                <constraint firstItem="5Cb-BX-Qoj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TrR-Fg-ldU"/>
+                <constraint firstItem="HNQ-3A-Zz8" firstAttribute="top" secondItem="lka-Ma-ZBo" secondAttribute="bottom" constant="50" id="UZQ-WF-vC4">
+                    <variation key="heightClass=compact-widthClass=compact" constant="9"/>
+                    <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstItem="HNQ-3A-Zz8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XcK-Ts-cNA"/>
+                <constraint firstItem="kRo-bs-n2o" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YeO-D6-i5D"/>
+                <constraint firstItem="aDo-Be-8RB" firstAttribute="top" secondItem="fNn-Za-mca" secondAttribute="bottom" constant="87" id="YvZ-6O-bEs"/>
+                <constraint firstItem="M9l-UE-msc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="auq-hs-P2h"/>
+                <constraint firstItem="lka-Ma-ZBo" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="cVc-5B-BYh"/>
+                <constraint firstItem="obo-aU-hgy" firstAttribute="leading" secondItem="kRo-bs-n2o" secondAttribute="leading" id="caJ-34-zeL"/>
+                <constraint firstItem="kRo-bs-n2o" firstAttribute="top" secondItem="M9l-UE-msc" secondAttribute="bottom" constant="18" id="dgi-J5-s3D"/>
+                <constraint firstItem="M9l-UE-msc" firstAttribute="top" secondItem="5Cb-BX-Qoj" secondAttribute="bottom" constant="20" id="eaz-Or-lXG">
+                    <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="HNQ-3A-Zz8" firstAttribute="centerX" secondItem="fNn-Za-mca" secondAttribute="centerX" id="kcy-0y-0XY"/>
+                <constraint firstItem="65k-Gx-SCB" firstAttribute="top" secondItem="M9l-UE-msc" secondAttribute="top" id="mZZ-W2-PuR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aDo-Be-8RB" secondAttribute="trailing" constant="91" id="mfw-jw-Qbp"/>
+                <constraint firstItem="hBG-Y5-iEU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="seK-j3-O5v"/>
+                <constraint firstItem="lka-Ma-ZBo" firstAttribute="bottom" secondItem="hBG-Y5-iEU" secondAttribute="bottom" id="vuI-d5-RjH"/>
+                <constraint firstItem="fNn-Za-mca" firstAttribute="top" secondItem="HNQ-3A-Zz8" secondAttribute="bottom" constant="8" id="yXY-Bm-tas"/>
+                <constraint firstItem="lka-Ma-ZBo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zZe-JB-XRY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="currentLocationLabel" destination="Zuw-pO-Z0n" id="Cqq-iV-1h0"/>
+                <outlet property="humidityLabel" destination="2TU-D9-Gzk" id="uuG-kJ-DRr"/>
+                <outlet property="navigationBar" destination="lka-Ma-ZBo" id="c8A-R7-wzO"/>
+                <outlet property="precipitationLabel" destination="2J4-H6-Nao" id="nza-PN-6em"/>
+                <outlet property="pressureLabel" destination="5Gb-Wn-UOv" id="vIX-BK-bEj"/>
+                <outlet property="temperatureLabel" destination="aDo-Be-8RB" id="vsM-Oh-8IJ"/>
+                <outlet property="windDirectionLabel" destination="q1m-W6-dsu" id="S9p-hP-gLG"/>
+                <outlet property="windSpeedLabel" destination="9oA-jv-I5i" id="GZC-B0-F8s"/>
+            </connections>
+            <point key="canvasLocation" x="136.875" y="94.014084507042256"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="01d" width="256" height="256"/>
+        <image name="divider" width="140" height="1"/>
+        <image name="humidity" width="30" height="30"/>
+        <image name="precipitation" width="30" height="30"/>
+        <image name="pressure" width="30" height="30"/>
+        <image name="wind" width="30" height="30"/>
+        <image name="wind-direction" width="30" height="30"/>
+    </resources>
+</document>
